@@ -3,6 +3,7 @@
         "es2021": true
     },
     "extends": [
+        "eslint:recommended",
         "airbnb-base",
         "prettier"
     ],
@@ -25,7 +26,10 @@
         ],
         "semi": [
             "error",
-            "never"
+            "never",
+            {
+                "beforeStatementContinuationChars": "always"
+            }
         ],
         "no-unused-vars": "error",
         "no-undef": "error",
@@ -33,6 +37,7 @@
         "no-multi-spaces": [
             "error"
         ],
-        "no-console": "warn"
+        "no-console": "warn",
+        "no-unexpected-multiline": "warn"
     }
 }

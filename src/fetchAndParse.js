@@ -1,9 +1,6 @@
 const { default: axios } = require('axios')
 const cheerio = require('cheerio')
-
-const BASE_URL = 'https://www.scrapethissite.com'
-const START_PAGE_NUMBER = 1
-const MILISECONDS_BOUNDARIES = 5000
+const { BASE_URL, START_PAGE_NUMBER } = require('./constants')
 
 const fetchPage = async (pageNumber) => {
     try {
@@ -54,20 +51,9 @@ const fetchTotalPageNumber = (loadedPage) => {
     return START_PAGE_NUMBER
 }
 
-const parsedData = []
-
-async function fetchAndParsePage(pageNumber, isFirst = true) {
-    const htmlResult = await fetchPage(pageNumber)
-    const loadedPage = loadPage(htmlResult)
-    parsedData.push({ data: parsePage(loadedPage), pageNumber })
-
-    if (isFirst) {
-        const totalPageNumber = fetchTotalPageNumber(loadedPage)
-
-        for (let i = START_PAGE_NUMBER + 1; i < totalPageNumber; i += 1) {
-            setTimeout(() => fetchAndParsePage(i, false), Math.random() * MILISECONDS_BOUNDARIES)
-        }
-    }
+module.exports = {
+    fetchPage,
+    loadPage,
+    parsePage,
+    fetchTotalPageNumber,
 }
-
-fetchAndParsePage(START_PAGE_NUMBER)
