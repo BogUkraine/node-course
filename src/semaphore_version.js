@@ -1,9 +1,9 @@
 const { Worker } = require('worker_threads')
 const fs = require('fs')
-const { START_PAGE_NUMBER, MAX_THREADS_NUMBER, MAX_THREADS_PARALLEL_THREADS } = require('./constants')
+const { START_PAGE_NUMBER, MAX_THREADS_NUMBER, MAX_THREADS_PARALLEL_THREADS, DATA_FILE } = require('./constants')
 const { loadPage, fetchTotalPageNumber } = require('./lib/parser')
 const { fetchPage } = require('./lib/api-calls')
-const { exitHandler } = require('./error-handling')
+const { exitHandler } = require('./utils/error-handling')
 const { getCSVHeadears } = require('./utils/csv-helpers')
 const Semaphore = require('./utils/semaphore')
 
@@ -15,7 +15,7 @@ const workerThreads = []
     const loadedPage = loadPage(htmlResult)
     const totalPageNumber = fetchTotalPageNumber(loadedPage)
 
-    const writableStream = fs.createWriteStream(`${__dirname}/files/result.csv`)
+    const writableStream = fs.createWriteStream(`${__dirname}/files/${DATA_FILE}`)
     writableStream.on('error', (error) => console.error('Something went wrong with writable', error))
     writableStream.write(getCSVHeadears())
 

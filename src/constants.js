@@ -4,6 +4,8 @@ const MILISECONDS_BOUNDARIES = 5000
 const MAX_THREADS_NUMBER = 5
 const WORKER_TERMINATE_CHECK_TIME_MS = 2000
 const MAX_THREADS_PARALLEL_THREADS = 3
+const DB_FILE = 'test.db'
+const DATA_FILE = 'result.csv'
 
 module.exports = {
     BASE_URL,
@@ -12,4 +14,6 @@ module.exports = {
     MAX_THREADS_NUMBER,
     WORKER_TERMINATE_CHECK_TIME_MS,
     MAX_THREADS_PARALLEL_THREADS,
+    DATA_FILE,
+    DB_FILE,
 }

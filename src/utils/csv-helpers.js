@@ -1,4 +1,4 @@
-const arrayToCSV = (dataArray) => {
+const arrayToCSVString = (dataArray) => {
     if (!dataArray || dataArray.length === 0) {
         return ''
     }
@@ -9,6 +9,6 @@ const arrayToCSV = (dataArray) => {
 const getCSVHeadears = () => 'name,year,wins,losses,otLosses,pct,gf,ga,diff'
 
 module.exports = {
-    arrayToCSV,
+    arrayToCSVString,
     getCSVHeadears,
 }

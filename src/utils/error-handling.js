@@ -11,8 +11,10 @@ const terminate = (options = { coredump: false, timeout: 500 }) => {
         if (err && err instanceof Error) {
             console.log(reason, err.message, err.stack)
         }
+        if (workerThreads) {
+            workerThreads.forEach((worker) => worker.terminate())
+        }
 
-        workerThreads.forEach((worker) => worker.terminate())
         setTimeout(() => exit(code), options.timeout).unref()
     }
 }
