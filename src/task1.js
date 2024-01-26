@@ -69,4 +69,4 @@ process.on('unhandledRejection', exitHandler(1, 'Unhandled Promise', workerThrea
 process.on('SIGTERM', exitHandler(0, 'SIGTERM', workerThreads))
 process.on('SIGINT', exitHandler(0, 'SIGINT', workerThreads))
 
-// The realisation with semaphore is in ./semaphore_version.js
+// The realisation with semaphore is in ./task1-semaphore-version
