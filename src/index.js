@@ -1,4 +1,5 @@
 const { Worker } = require('worker_threads')
+const fs = require('fs')
 const { START_PAGE_NUMBER, MAX_THREADS_NUMBER, WORKER_TERMINATE_CHECK_TIME_MS } = require('./constants')
 const { fetchPage, loadPage, fetchTotalPageNumber } = require('./fetchAndParse')
 
@@ -9,6 +10,10 @@ const { fetchPage, loadPage, fetchTotalPageNumber } = require('./fetchAndParse')
     const htmlResult = await fetchPage(START_PAGE_NUMBER)
     const loadedPage = loadPage(htmlResult)
     const totalPageNumber = fetchTotalPageNumber(loadedPage)
+
+    const headers = 'name,year,wins,losses,otLosses,pct,gf,ga,diff'
+    const writableStream = fs.createWriteStream(`${__dirname}/files/result.csv`)
+    writableStream.write(`${headers}`)
 
     const pageNumbersNotTakenIntoWork = new Array(totalPageNumber).fill(1).map((item, index) => item + index) // have a list of all pages e.g. [1, 2, ... totalPageNumber]
     const workerThreads = []
@@ -22,7 +27,7 @@ const { fetchPage, loadPage, fetchTotalPageNumber } = require('./fetchAndParse')
     workerThreads.forEach((worker) => {
         worker.on('message', (value) => {
             console.log('Message is recieved for page #', value.pageNumber)
-            parsedData.push({ data: value.data, pageNumber: value.pageNumber })
+            writableStream.write(value.data)
 
             if (pageNumbersNotTakenIntoWork.length) {
                 const pageNumber = pageNumbersNotTakenIntoWork.shift()
@@ -50,5 +55,5 @@ const { fetchPage, loadPage, fetchTotalPageNumber } = require('./fetchAndParse')
     })
 })()
 
-// there is no random behaviour
-// not a real semaphore ??
+// there is no random behaviour with threads
+// The realisation with semaphore is in ./semaphore_version.js

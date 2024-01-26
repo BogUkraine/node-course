@@ -1,5 +1,6 @@
 const { parentPort } = require('worker_threads')
 const { fetchPage, loadPage, parsePage } = require('./fetchAndParse')
+const { arrayToCSV } = require('./utils')
 
 // eslint-disable-next-line import/newline-after-import
 ;(async () => {
@@ -11,7 +12,7 @@ const { fetchPage, loadPage, parsePage } = require('./fetchAndParse')
             const loadedPage = loadPage(htmlResult)
             const parsedPage = parsePage(loadedPage)
 
-            parentPort.postMessage({ parsedPage, pageNumber: data.pageNumber })
+            parentPort.postMessage({ data: `\n${arrayToCSV(parsedPage)}`, pageNumber: data.pageNumber })
         })
     } catch (error) {
         console.error(error)
