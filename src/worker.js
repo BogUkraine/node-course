@@ -1,6 +1,7 @@
 const { parentPort } = require('worker_threads')
-const { fetchPage, loadPage, parsePage } = require('./fetchAndParse')
-const { arrayToCSV } = require('./utils')
+const { loadPage, parsePage } = require('./lib/parser')
+const { arrayToCSV } = require('./utils/csv-helpers')
+const { fetchPage } = require('./lib/api-calls')
 
 // eslint-disable-next-line import/newline-after-import
 ;(async () => {

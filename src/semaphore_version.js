@@ -1,19 +1,25 @@
 const { Worker } = require('worker_threads')
+const fs = require('fs')
 const { START_PAGE_NUMBER, MAX_THREADS_NUMBER, MAX_THREADS_PARALLEL_THREADS } = require('./constants')
-const { fetchPage, loadPage, fetchTotalPageNumber } = require('./fetchAndParse')
-const Semaphore = require('./semaphore')
+const { loadPage, fetchTotalPageNumber } = require('./lib/parser')
+const { fetchPage } = require('./lib/api-calls')
+const { exitHandler } = require('./error-handling')
+const { getCSVHeadears } = require('./utils/csv-helpers')
+const Semaphore = require('./utils/semaphore')
 
 const semaphore = new Semaphore(MAX_THREADS_PARALLEL_THREADS)
+const workerThreads = []
 
 ;(async () => {
-    const parsedData = []
-
     const htmlResult = await fetchPage(START_PAGE_NUMBER)
     const loadedPage = loadPage(htmlResult)
     const totalPageNumber = fetchTotalPageNumber(loadedPage)
 
+    const writableStream = fs.createWriteStream(`${__dirname}/files/result.csv`)
+    writableStream.on('error', (error) => console.error('Something went wrong with writable', error))
+    writableStream.write(getCSVHeadears())
+
     const pageNumbersNotTakenIntoWork = new Array(totalPageNumber).fill(1).map((item, index) => item + index) // have a list of all pages e.g. [1, 2, ... totalPageNumber]
-    const workerThreads = []
 
     const threadsNumber = Math.min(totalPageNumber, MAX_THREADS_NUMBER)
 
@@ -30,6 +36,7 @@ const semaphore = new Semaphore(MAX_THREADS_PARALLEL_THREADS)
             processNextTaskWithWorker()
         } else if (!pageNumbersNotTakenIntoWork.length) {
             workerThreads.forEach((worker) => worker.terminate())
+            writableStream.close()
         }
     }
 
@@ -40,7 +47,8 @@ const semaphore = new Semaphore(MAX_THREADS_PARALLEL_THREADS)
     workerThreads.forEach((worker) => {
         worker.on('message', (value) => {
             console.log('Message is recieved for page #', value.pageNumber)
-            parsedData.push({ data: value.data, pageNumber: value.pageNumber })
+            writableStream.write(value.data)
+
             semaphore.releaseSlot()
             // eslint-disable-next-line no-param-reassign
             worker.isBusy = false
@@ -52,3 +60,9 @@ const semaphore = new Semaphore(MAX_THREADS_PARALLEL_THREADS)
 
     processNextTaskWithWorker()
 })()
+
+// it would be good to close writable stream here as well, but next time...
+process.on('uncaughtException', exitHandler(1, 'Unexpected Error', workerThreads))
+process.on('unhandledRejection', exitHandler(1, 'Unhandled Promise', workerThreads))
+process.on('SIGTERM', exitHandler(0, 'SIGTERM', workerThreads))
+process.on('SIGINT', exitHandler(0, 'SIGINT', workerThreads))

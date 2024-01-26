@@ -6,6 +6,9 @@ const arrayToCSV = (dataArray) => {
     return dataArray.map((item) => Object.values(item).toString()).join('\n')
 }
 
+const getCSVHeadears = () => 'name,year,wins,losses,otLosses,pct,gf,ga,diff'
+
 module.exports = {
     arrayToCSV,
+    getCSVHeadears,
 }

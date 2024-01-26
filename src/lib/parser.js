@@ -1,15 +1,6 @@
-const { default: axios } = require('axios')
 const cheerio = require('cheerio')
-const { BASE_URL, START_PAGE_NUMBER } = require('./constants')
+const { START_PAGE_NUMBER } = require('../constants')
 
-const fetchPage = async (pageNumber) => {
-    try {
-        return (await axios.get(`/pages/forms/?page_num=${pageNumber}`, { baseURL: BASE_URL })).data
-    } catch (error) {
-        console.error('Something went wrong during GET page request', error.message, error.stack)
-        throw Error(error.message)
-    }
-}
 const loadPage = (htmlPage) => cheerio.load(htmlPage)
 
 const parsePage = (loadedPage) => {
@@ -52,7 +43,6 @@ const fetchTotalPageNumber = (loadedPage) => {
 }
 
 module.exports = {
-    fetchPage,
     loadPage,
     parsePage,
     fetchTotalPageNumber,

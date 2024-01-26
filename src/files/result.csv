@@ -1,79 +1,4 @@
 name,year,wins,losses,otLosses,pct,gf,ga,diff
-Edmonton Oilers,1994,17,27,,0.354,136,183,-47
-Florida Panthers,1994,20,22,,0.417,115,127,-12
-Hartford Whalers,1994,19,24,,0.396,127,141,-14
-Los Angeles Kings,1994,16,23,,0.333,142,174,-32
-Montreal Canadiens,1994,18,23,,0.375,125,148,-23
-New Jersey Devils,1994,22,18,,0.458,136,121,15
-New York Islanders,1994,15,28,,0.312,126,158,-32
-New York Rangers,1994,22,23,,0.458,139,134,5
-Ottawa Senators,1994,9,34,,0.188,117,174,-57
-Philadelphia Flyers,1994,28,16,,0.583,150,132,18
-Pittsburgh Penguins,1994,29,16,,0.604,181,158,23
-Quebec Nordiques,1994,30,13,,0.625,185,134,51
-San Jose Sharks,1994,19,25,,0.396,129,161,-32
-St. Louis Blues,1994,28,15,,0.583,178,135,43
-Tampa Bay Lightning,1994,17,28,,0.354,120,144,-24
-Toronto Maple Leafs,1994,21,19,,0.438,135,146,-11
-Vancouver Canucks,1994,18,18,,0.375,153,148,5
-Washington Capitals,1994,22,18,,0.458,136,120,16
-Winnipeg Jets,1994,16,25,,0.333,157,177,-20
-Mighty Ducks of Anaheim,1995,35,39,,0.427,234,247,-13
-Boston Bruins,1995,40,31,,0.488,282,269,13
-Buffalo Sabres,1995,33,42,,0.402,247,262,-15
-Calgary Flames,1995,34,37,,0.415,241,240,1
-Chicago Blackhawks,1995,40,28,,0.488,273,220,53
-Colorado Avalanche,1995,47,25,,0.573,326,240,86
-Boston Bruins,1990,44,24,,0.55,299,264,35
-Buffalo Sabres,1990,31,30,,0.388,292,278,14
-Calgary Flames,1990,46,26,,0.575,344,263,81
-Chicago Blackhawks,1990,49,23,,0.613,284,211,73
-Detroit Red Wings,1990,34,38,,0.425,273,298,-25
-Edmonton Oilers,1990,37,37,,0.463,272,272,0
-Hartford Whalers,1990,31,38,,0.388,238,276,-38
-Los Angeles Kings,1990,46,24,,0.575,340,254,86
-Minnesota North Stars,1990,27,39,,0.338,256,266,-10
-Montreal Canadiens,1990,39,30,,0.487,273,249,24
-New Jersey Devils,1990,32,33,,0.4,272,264,8
-New York Islanders,1990,25,45,,0.312,223,290,-67
-New York Rangers,1990,36,31,,0.45,297,265,32
-Philadelphia Flyers,1990,33,37,,0.412,252,267,-15
-Pittsburgh Penguins,1990,41,33,,0.512,342,305,37
-Quebec Nordiques,1990,16,50,,0.2,236,354,-118
-St. Louis Blues,1990,47,22,,0.588,310,250,60
-Toronto Maple Leafs,1990,23,46,,0.287,241,318,-77
-Vancouver Canucks,1990,28,43,,0.35,243,315,-72
-Washington Capitals,1990,37,36,,0.463,258,258,0
-Winnipeg Jets,1990,26,43,,0.325,260,288,-28
-Boston Bruins,1991,36,32,,0.45,270,275,-5
-Buffalo Sabres,1991,31,37,,0.388,289,299,-10
-Calgary Flames,1991,31,37,,0.388,296,305,-9
-Chicago Blackhawks,1991,36,29,,0.45,257,236,21
-Detroit Red Wings,1991,43,25,,0.537,320,256,64
-Edmonton Oilers,1991,36,34,,0.45,295,297,-2
-Hartford Whalers,1991,26,41,,0.325,247,283,-36
-Los Angeles Kings,1991,35,31,,0.438,287,296,-9
-Minnesota North Stars,1991,32,42,,0.4,246,278,-32
-Montreal Canadiens,1991,41,28,,0.512,267,207,60
-New Jersey Devils,1991,38,31,,0.475,289,259,30
-New York Islanders,1991,34,35,,0.425,291,299,-8
-New York Rangers,1991,50,25,,0.625,321,246,75
-Philadelphia Flyers,1991,32,37,,0.4,252,273,-21
-Pittsburgh Penguins,1991,39,32,,0.487,343,308,35
-Quebec Nordiques,1991,20,48,,0.25,255,318,-63
-San Jose Sharks,1991,17,58,,0.212,219,359,-140
-St. Louis Blues,1991,36,33,,0.45,279,266,13
-Toronto Maple Leafs,1991,30,43,,0.375,234,294,-60
-Vancouver Canucks,1991,42,26,,0.525,285,250,35
-Washington Capitals,1991,45,27,,0.562,330,275,55
-Winnipeg Jets,1991,33,32,,0.412,251,244,7
-Boston Bruins,1992,51,26,,0.607,332,268,64
-Buffalo Sabres,1992,38,36,,0.452,335,297,38
-Calgary Flames,1992,43,30,,0.512,322,282,40
-Chicago Blackhawks,1992,47,25,,0.56,279,230,49
-Detroit Red Wings,1992,47,28,,0.56,369,280,89
-Edmonton Oilers,1992,26,50,,0.31,242,337,-95
-Hartford Whalers,1992,26,52,,0.31,284,369,-85
 Los Angeles Kings,1992,39,35,,0.464,338,340,-2
 Minnesota North Stars,1992,36,38,,0.429,272,293,-21
 Montreal Canadiens,1992,48,30,,0.571,326,280,46
@@ -99,6 +24,56 @@ Chicago Blackhawks,1993,39,36,,0.464,254,240,14
 Dallas Stars,1993,42,29,,0.5,286,265,21
 Detroit Red Wings,1993,46,30,,0.548,356,275,81
 Edmonton Oilers,1993,25,45,,0.298,261,305,-44
+Detroit Red Wings,1991,43,25,,0.537,320,256,64
+Edmonton Oilers,1991,36,34,,0.45,295,297,-2
+Hartford Whalers,1991,26,41,,0.325,247,283,-36
+Los Angeles Kings,1991,35,31,,0.438,287,296,-9
+Minnesota North Stars,1991,32,42,,0.4,246,278,-32
+Montreal Canadiens,1991,41,28,,0.512,267,207,60
+New Jersey Devils,1991,38,31,,0.475,289,259,30
+New York Islanders,1991,34,35,,0.425,291,299,-8
+New York Rangers,1991,50,25,,0.625,321,246,75
+Philadelphia Flyers,1991,32,37,,0.4,252,273,-21
+Pittsburgh Penguins,1991,39,32,,0.487,343,308,35
+Quebec Nordiques,1991,20,48,,0.25,255,318,-63
+San Jose Sharks,1991,17,58,,0.212,219,359,-140
+St. Louis Blues,1991,36,33,,0.45,279,266,13
+Toronto Maple Leafs,1991,30,43,,0.375,234,294,-60
+Vancouver Canucks,1991,42,26,,0.525,285,250,35
+Washington Capitals,1991,45,27,,0.562,330,275,55
+Winnipeg Jets,1991,33,32,,0.412,251,244,7
+Boston Bruins,1992,51,26,,0.607,332,268,64
+Buffalo Sabres,1992,38,36,,0.452,335,297,38
+Calgary Flames,1992,43,30,,0.512,322,282,40
+Chicago Blackhawks,1992,47,25,,0.56,279,230,49
+Detroit Red Wings,1992,47,28,,0.56,369,280,89
+Edmonton Oilers,1992,26,50,,0.31,242,337,-95
+Hartford Whalers,1992,26,52,,0.31,284,369,-85
+Boston Bruins,1990,44,24,,0.55,299,264,35
+Buffalo Sabres,1990,31,30,,0.388,292,278,14
+Calgary Flames,1990,46,26,,0.575,344,263,81
+Chicago Blackhawks,1990,49,23,,0.613,284,211,73
+Detroit Red Wings,1990,34,38,,0.425,273,298,-25
+Edmonton Oilers,1990,37,37,,0.463,272,272,0
+Hartford Whalers,1990,31,38,,0.388,238,276,-38
+Los Angeles Kings,1990,46,24,,0.575,340,254,86
+Minnesota North Stars,1990,27,39,,0.338,256,266,-10
+Montreal Canadiens,1990,39,30,,0.487,273,249,24
+New Jersey Devils,1990,32,33,,0.4,272,264,8
+New York Islanders,1990,25,45,,0.312,223,290,-67
+New York Rangers,1990,36,31,,0.45,297,265,32
+Philadelphia Flyers,1990,33,37,,0.412,252,267,-15
+Pittsburgh Penguins,1990,41,33,,0.512,342,305,37
+Quebec Nordiques,1990,16,50,,0.2,236,354,-118
+St. Louis Blues,1990,47,22,,0.588,310,250,60
+Toronto Maple Leafs,1990,23,46,,0.287,241,318,-77
+Vancouver Canucks,1990,28,43,,0.35,243,315,-72
+Washington Capitals,1990,37,36,,0.463,258,258,0
+Winnipeg Jets,1990,26,43,,0.325,260,288,-28
+Boston Bruins,1991,36,32,,0.45,270,275,-5
+Buffalo Sabres,1991,31,37,,0.388,289,299,-10
+Calgary Flames,1991,31,37,,0.388,296,305,-9
+Chicago Blackhawks,1991,36,29,,0.45,257,236,21
 Florida Panthers,1993,33,34,,0.393,233,233,0
 Hartford Whalers,1993,27,48,,0.321,227,288,-61
 Los Angeles Kings,1993,27,45,,0.321,294,322,-28
@@ -124,6 +99,31 @@ Calgary Flames,1994,24,17,,0.5,163,135,28
 Chicago Blackhawks,1994,24,19,,0.5,156,115,41
 Dallas Stars,1994,17,23,,0.354,136,135,1
 Detroit Red Wings,1994,33,11,,0.688,180,117,63
+Edmonton Oilers,1994,17,27,,0.354,136,183,-47
+Florida Panthers,1994,20,22,,0.417,115,127,-12
+Hartford Whalers,1994,19,24,,0.396,127,141,-14
+Los Angeles Kings,1994,16,23,,0.333,142,174,-32
+Montreal Canadiens,1994,18,23,,0.375,125,148,-23
+New Jersey Devils,1994,22,18,,0.458,136,121,15
+New York Islanders,1994,15,28,,0.312,126,158,-32
+New York Rangers,1994,22,23,,0.458,139,134,5
+Ottawa Senators,1994,9,34,,0.188,117,174,-57
+Philadelphia Flyers,1994,28,16,,0.583,150,132,18
+Pittsburgh Penguins,1994,29,16,,0.604,181,158,23
+Quebec Nordiques,1994,30,13,,0.625,185,134,51
+San Jose Sharks,1994,19,25,,0.396,129,161,-32
+St. Louis Blues,1994,28,15,,0.583,178,135,43
+Tampa Bay Lightning,1994,17,28,,0.354,120,144,-24
+Toronto Maple Leafs,1994,21,19,,0.438,135,146,-11
+Vancouver Canucks,1994,18,18,,0.375,153,148,5
+Washington Capitals,1994,22,18,,0.458,136,120,16
+Winnipeg Jets,1994,16,25,,0.333,157,177,-20
+Mighty Ducks of Anaheim,1995,35,39,,0.427,234,247,-13
+Boston Bruins,1995,40,31,,0.488,282,269,13
+Buffalo Sabres,1995,33,42,,0.402,247,262,-15
+Calgary Flames,1995,34,37,,0.415,241,240,1
+Chicago Blackhawks,1995,40,28,,0.488,273,220,53
+Colorado Avalanche,1995,47,25,,0.573,326,240,86
 Dallas Stars,1995,26,42,,0.317,227,280,-53
 Detroit Red Wings,1995,62,13,,0.756,325,181,144
 Edmonton Oilers,1995,30,44,,0.366,240,304,-64
@@ -199,31 +199,6 @@ Washington Capitals,1997,40,30,,0.488,219,202,17
 Mighty Ducks of Anaheim,1998,35,34,,0.427,215,206,9
 Boston Bruins,1998,39,30,,0.476,214,181,33
 Buffalo Sabres,1998,37,28,,0.451,207,175,32
-Atlanta Thrashers,1999,14,57,4,0.171,170,313,-143
-Boston Bruins,1999,24,33,6,0.293,210,248,-38
-Buffalo Sabres,1999,35,32,4,0.427,213,204,9
-Calgary Flames,1999,31,36,5,0.378,211,256,-45
-Carolina Hurricanes,1999,37,35,0,0.451,217,216,1
-Chicago Blackhawks,1999,33,37,2,0.402,242,245,-3
-Colorado Avalanche,1999,42,28,1,0.512,233,201,32
-Dallas Stars,1999,43,23,6,0.524,211,184,27
-Detroit Red Wings,1999,48,22,2,0.585,278,210,68
-Edmonton Oilers,1999,32,26,8,0.39,226,212,14
-Florida Panthers,1999,43,27,6,0.524,244,209,35
-Los Angeles Kings,1999,39,27,4,0.476,245,228,17
-Montreal Canadiens,1999,35,34,4,0.427,196,194,2
-Nashville Predators,1999,28,40,7,0.341,199,240,-41
-New Jersey Devils,1999,45,24,5,0.549,251,203,48
-New York Islanders,1999,24,48,1,0.293,194,275,-81
-New York Rangers,1999,29,38,3,0.354,218,246,-28
-Ottawa Senators,1999,41,28,2,0.5,244,210,34
-Philadelphia Flyers,1999,45,22,3,0.549,237,179,58
-Phoenix Coyotes,1999,39,31,4,0.476,232,228,4
-Pittsburgh Penguins,1999,37,31,6,0.451,241,236,5
-San Jose Sharks,1999,35,30,7,0.427,225,214,11
-St. Louis Blues,1999,51,19,1,0.622,248,165,83
-Tampa Bay Lightning,1999,19,47,7,0.232,204,310,-106
-Toronto Maple Leafs,1999,45,27,3,0.549,246,222,24
 Calgary Flames,1998,30,40,,0.366,211,234,-23
 Carolina Hurricanes,1998,34,30,,0.415,210,202,8
 Chicago Blackhawks,1998,29,41,,0.354,202,248,-46
@@ -249,6 +224,31 @@ Toronto Maple Leafs,1998,45,30,,0.549,268,231,37
 Vancouver Canucks,1998,23,47,,0.28,192,258,-66
 Washington Capitals,1998,31,45,,0.378,200,218,-18
 Mighty Ducks of Anaheim,1999,34,33,3,0.415,217,227,-10
+Atlanta Thrashers,1999,14,57,4,0.171,170,313,-143
+Boston Bruins,1999,24,33,6,0.293,210,248,-38
+Buffalo Sabres,1999,35,32,4,0.427,213,204,9
+Calgary Flames,1999,31,36,5,0.378,211,256,-45
+Carolina Hurricanes,1999,37,35,0,0.451,217,216,1
+Chicago Blackhawks,1999,33,37,2,0.402,242,245,-3
+Colorado Avalanche,1999,42,28,1,0.512,233,201,32
+Dallas Stars,1999,43,23,6,0.524,211,184,27
+Detroit Red Wings,1999,48,22,2,0.585,278,210,68
+Edmonton Oilers,1999,32,26,8,0.39,226,212,14
+Florida Panthers,1999,43,27,6,0.524,244,209,35
+Los Angeles Kings,1999,39,27,4,0.476,245,228,17
+Montreal Canadiens,1999,35,34,4,0.427,196,194,2
+Nashville Predators,1999,28,40,7,0.341,199,240,-41
+New Jersey Devils,1999,45,24,5,0.549,251,203,48
+New York Islanders,1999,24,48,1,0.293,194,275,-81
+New York Rangers,1999,29,38,3,0.354,218,246,-28
+Ottawa Senators,1999,41,28,2,0.5,244,210,34
+Philadelphia Flyers,1999,45,22,3,0.549,237,179,58
+Phoenix Coyotes,1999,39,31,4,0.476,232,228,4
+Pittsburgh Penguins,1999,37,31,6,0.451,241,236,5
+San Jose Sharks,1999,35,30,7,0.427,225,214,11
+St. Louis Blues,1999,51,19,1,0.622,248,165,83
+Tampa Bay Lightning,1999,19,47,7,0.232,204,310,-106
+Toronto Maple Leafs,1999,45,27,3,0.549,246,222,24
 Vancouver Canucks,1999,30,29,8,0.366,227,237,-10
 Washington Capitals,1999,44,24,2,0.537,227,194,33
 Mighty Ducks of Anaheim,2000,25,41,5,0.305,188,245,-57
@@ -499,13 +499,6 @@ Calgary Flames,2009,40,32,10,0.488,204,210,-6
 Carolina Hurricanes,2009,35,37,10,0.427,230,256,-26
 Columbus Blue Jackets,2009,32,35,15,0.39,216,259,-43
 Chicago Blackhawks,2009,52,22,8,0.634,271,209,62
-San Jose Sharks,2011,43,29,10,0.524,228,210,18
-St. Louis Blues,2011,49,22,11,0.598,210,165,45
-Tampa Bay Lightning,2011,38,36,8,0.463,235,281,-46
-Toronto Maple Leafs,2011,35,37,10,0.427,231,264,-33
-Vancouver Canucks,2011,51,22,9,0.622,249,198,51
-Washington Capitals,2011,42,32,8,0.512,222,230,-8
-Winnipeg Jets,2011,37,35,10,0.451,225,246,-21
 Colorado Avalanche,2009,43,30,9,0.524,244,233,11
 Dallas Stars,2009,37,31,14,0.451,237,254,-17
 Detroit Red Wings,2009,44,24,14,0.537,229,216,13
@@ -531,53 +524,3 @@ Washington Capitals,2009,54,15,13,0.659,318,233,85
 Anaheim Ducks,2010,47,30,5,0.573,239,235,4
 Atlanta Thrashers,2010,34,36,12,0.415,223,269,-46
 Boston Bruins,2010,46,25,11,0.561,246,195,51
-Buffalo Sabres,2010,43,29,10,0.524,245,229,16
-Calgary Flames,2010,41,29,12,0.5,250,237,13
-Carolina Hurricanes,2010,40,31,11,0.488,236,239,-3
-Columbus Blue Jackets,2010,34,35,13,0.415,215,258,-43
-Chicago Blackhawks,2010,44,29,9,0.537,258,225,33
-Colorado Avalanche,2010,30,44,8,0.366,227,288,-61
-Dallas Stars,2010,42,29,11,0.512,227,233,-6
-Detroit Red Wings,2010,47,25,10,0.573,261,241,20
-Edmonton Oilers,2010,25,45,12,0.305,193,269,-76
-Florida Panthers,2010,30,40,12,0.366,195,229,-34
-Los Angeles Kings,2010,46,30,6,0.561,219,198,21
-Minnesota Wild,2010,39,35,8,0.476,206,233,-27
-Montreal Canadiens,2010,44,30,8,0.537,216,209,7
-Nashville Predators,2010,44,27,11,0.537,219,194,25
-New Jersey Devils,2010,38,39,5,0.463,174,209,-35
-New York Islanders,2010,30,39,13,0.366,229,264,-35
-New York Rangers,2010,44,33,5,0.537,233,198,35
-Ottawa Senators,2010,32,40,10,0.39,192,250,-58
-Philadelphia Flyers,2010,47,23,12,0.573,259,223,36
-Phoenix Coyotes,2010,43,26,13,0.524,231,226,5
-Pittsburgh Penguins,2010,49,25,8,0.598,238,199,39
-San Jose Sharks,2010,48,25,9,0.585,248,213,35
-St. Louis Blues,2010,38,33,11,0.463,240,234,6
-Tampa Bay Lightning,2010,46,25,11,0.561,247,240,7
-Toronto Maple Leafs,2010,37,34,11,0.451,218,251,-33
-Vancouver Canucks,2010,54,19,9,0.659,262,185,77
-Washington Capitals,2010,48,23,11,0.585,224,197,27
-Anaheim Ducks,2011,34,36,12,0.415,204,231,-27
-Boston Bruins,2011,49,29,4,0.598,269,202,67
-Buffalo Sabres,2011,39,32,11,0.476,218,230,-12
-Calgary Flames,2011,37,29,16,0.451,202,226,-24
-Carolina Hurricanes,2011,33,33,16,0.402,213,243,-30
-Columbus Blue Jackets,2011,29,46,7,0.354,202,262,-60
-Chicago Blackhawks,2011,45,26,11,0.549,248,238,10
-Colorado Avalanche,2011,41,35,6,0.5,208,220,-12
-Dallas Stars,2011,42,35,5,0.512,211,222,-11
-Detroit Red Wings,2011,48,28,6,0.585,248,203,45
-Edmonton Oilers,2011,32,40,10,0.39,212,239,-27
-Florida Panthers,2011,38,26,18,0.463,203,227,-24
-Los Angeles Kings,2011,40,27,15,0.488,194,179,15
-Minnesota Wild,2011,35,36,11,0.427,177,226,-49
-Montreal Canadiens,2011,31,35,16,0.378,212,226,-14
-Nashville Predators,2011,48,26,8,0.585,237,210,27
-New Jersey Devils,2011,48,28,6,0.585,228,209,19
-New York Islanders,2011,34,37,11,0.415,203,255,-52
-New York Rangers,2011,51,24,7,0.622,226,187,39
-Ottawa Senators,2011,41,31,10,0.5,249,240,9
-Philadelphia Flyers,2011,47,26,9,0.573,264,232,32
-Phoenix Coyotes,2011,42,27,13,0.512,216,204,12
-Pittsburgh Penguins,2011,51,25,6,0.622,282,221,61
