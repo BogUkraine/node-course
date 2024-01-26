@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 const sqlite3 = require('sqlite3').verbose()
 const readline = require('readline').createInterface({
     input: process.stdin,
