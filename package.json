@@ -1,0 +1,36 @@
+{
+  "name": "blysov-njs01",
+  "version": "1.0.0",
+  "description": "NJS01 blysov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "prepare": "husky install",
+    "lint": "eslint ./src",
+    "format": "prettier .",
+    "format:lint": "npm run lint && npm run format"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.10",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "husky": "^8.0.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4",
+    "tsx": "^4.7.0"
+  }
+}
