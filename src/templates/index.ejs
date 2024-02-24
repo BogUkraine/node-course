@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Stats</title>
+    </head>
+    <body>
+        <h1>Weather Statistics</h1>
+
+        <form id="weatherForm">
+            <label for="city">Choose a city:</label>
+            <select name="city" id="city">
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Sydney">Sydney</option>
+                <!-- Add more cities as needed -->
+            </select>
+            <button type="button" onclick="getWeather()">Get Weather</button>
+        </form>
+
+        <h2>Weather in <span id="selectedCity"></span></h2>
+
+        <table id="weatherTable"></table>
+
+        <script>
+            function getWeather() {
+                const selectedCity = document.getElementById('city').value
+                fetch(`/weather/${selectedCity}`)
+                    .then((response) => response.json())
+                    .then((weatherData) => {
+                        document.getElementById('selectedCity').innerText = selectedCity
+                        updateWeatherTable(weatherData)
+                    })
+                    .catch((error) => console.error('Error fetching weather data:', error))
+            }
+
+            function updateWeatherTable(weatherData) {
+                const table = document.getElementById('weatherTable')
+                table.innerHTML = `<tr>
+                                <th>Temperature</th>
+                                <th>Humidity</th>
+                                <th>Wind Speed</th>
+                            </tr>
+                            <tr>
+                                <td>${weatherData.temperature}°C</td>
+                                <td>${weatherData.humidity}%</td>
+                                <td>${weatherData.windSpeed} km/h</td>
+                            </tr>`
+            }
+        </script>
+    </body>
+</html>
